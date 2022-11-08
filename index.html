@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container1">
+      <a class="logo" href="#">Remember<span>That</span></a>
+      
+      <img id="mobile-cta" class="mobile-menu" src="/menu.svg" alt="open navigation">
+      
+      <nav>
+        <img id="mobile-exit" class="mobile-menu-exit"  src="/exit.svg" alt="close navigation">
+        
+    
+        <ul class="primary-nav">
+          <li id="current"><a class="men" href="#">Home</a></li>
+          <li><a class="men" href="#">Features</a></li>
+          <li><a class="men" href="#">Pricing</a></li>
+        </ul>
+        
+        <ul class="secondary-nav">
+          <li><a class="men" href="#">Contact</a></li>
+          <li id="go-premium-cta"><a class="men" href="#">Go Premium</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <section class="hero">
+   <div class="container">
+     <div class="left-col">
+       <p class="subhead">It's Nitty &amp; Gritty!</p>
+       <h1>A Task App that doesn't stink</h1>
+       
+       <div class="hero-cta">
+         <a class="primary-cta" href="#">Try for free</a>
+         <a class="watch-video-cta" href="#" >
+           <img class="watch" src="/videocam-outline.svg" alt="Watch a video">Watch a video
+         </a>
+       </div>
+       
+     </div>
+     <div>
+       <img id="illustration" class="hero-img" src="/illustration.svg" alt="illustration image">
+     </div>
+   </div>
+  </section>
+  
+  <section class="features-section">
+    <div class="container">
+      <ul class="features-list">
+        <li class="ftl">Unlimited Tasks</li>
+        <li class="ftl">SMS Task Remimder</li>
+        <li class="ftl">Confetti Explosions upon Tasks Completion</li>
+        <li class="ftl">Social Media Announcements</li>
+        <li class="ftl">Real Time Collaboration</li>
+        <li class="ftl">Other Awesome Features</li>
+      </ul>
+      <img src="/holding-phone.jpg" alt="hold phone image">
+    </div>
+  </section>
+  
+  <section class="testimonial-section">
+    <div class="container">
+      <ul>
+        <li class="king-li"><img class="person" src="/person.jpg" alt="person">
+        <blockquote>
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+        </blockquote>
+        <cite>- Micheal King</cite>
+        </li>
+        
+        <li class="king-li"><img class="person" src="/person.jpg" alt="person">
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+          </blockquote>
+          <cite>- Micheal King</cite>
+        </li>
+        
+        <li class="king-li"><img class="person" src="/person.jpg" alt="person">
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+          </blockquote>
+          <cite>- Micheal King</cite>
+        </li>
+      </ul>
+    </div>
+    
+  </section>
+  
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-left">
+        <h2>Contact</h2>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Banjo Oluwayinka">
+          <br>
+          
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="banjoyinka455@gmail.com">
+          <br>
+          
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="********">
+          
+          
+          <label for="message">Message</label>
+          <textarea placeholder="Type your message here" name="message" id="message" cols="30" rows="10"></textarea>
+          <br>
+          
+          
+          <input type="submit" class="send-message-cta" value="Send Messsage">
+        </form>
+      </div>
+      <div class="contact-right">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45932653378!2d3.1438714678340696!3d6.548376810548728!2m3!1fo!2fo!3fo!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1666196146301!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+    </div>
+  </section>
+ <script>
+   const mobileBtn = document.getElementById('mobile-cta');
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit');
+  
+    mobileBtn.addEventListener('click', ()=>{
+      nav.classList.add('menu-btn');
+    })
+    
+   mobileBtnExit.addEventListener('click', () => {
+     nav.classList.remove('menu-btn');
+   })
+   
+ </script>
+</body>
+</html>
